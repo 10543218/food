@@ -1,0 +1,123 @@
+html, body{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	font-family: 微軟正黑體;
+	background-color: #dbdbea;
+}
+
+
+/* 餐點單選文字 */
+.singleOrder{
+	display: flex;
+	justify-content: center;
+	font-size: 32px;
+	color: black;
+	margin-bottom: 12px;
+	margin-top: 12px;
+}
+
+/* 擺食物瀏覽的整個區域 */
+.food{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	/* background-color: black; */
+	/* height: 400px; */
+}
+
+/* 食物各區塊共通的樣式 */
+.foodSect{
+	background-color: #2693ff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border: 1px black solid;
+}
+
+.borderBottom0px{
+	border-bottom: 0px black solid;
+}
+
+/* 食物區大標題的背景 */
+.foodTitleBg{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 248px;
+	height: 50px;
+	/* background-color: white; */
+	color: white;
+	/* border: 2px black solid; */
+	margin: 16px 25px;
+	font-size: 32px;
+
+}
+
+/* 上方圓角框 */
+.radiusTop{
+	border-top-left-radius: 24px;
+	border-top-right-radius: 24px;
+}
+
+/* 下方圓角框 */
+.radiusBottom{
+	border-bottom-left-radius: 24px;
+	border-bottom-right-radius: 24px;
+}
+
+/* 內部產品瀏覽開始 */
+.foodSectProd{
+	/* margin: 0px 20px; */
+	/* position: relative; */
+	/* left: 25px; */
+	display: none;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color: white;
+	width: 300px;
+	justify-content: start;
+}
+
+/* 每個產品的外框 */
+.product{
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	padding-bottom: 20px;
+	/* background-color: #dbdbea; */
+	width: 300px;
+}
+
+/* 食物名稱 */
+.foodName{
+	font-size: 20px;
+	/* background-color: #dbdbea; */
+	/* margin: 14px 30px; */
+	color: black;
+	height: 48px;
+	width: 290px;
+	display: flex;
+	/* justify-content: center; */
+	align-items: center;
+	padding-top: 10px;
+	/* border: 1px black solid; */
+	position: relative;
+	left: 10px;
+}
+
+/* 價格文字 */
+.price{
+	border-bottom: 1px #e00c7a solid;
+	position: relative;
+	left: 10px;
+	color: #e00c7a;
+}
+
+/* 最後一個產品的外框 */
+.lastProduct{
+	border-bottom: 0px black solid;
+}
