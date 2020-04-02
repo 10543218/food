@@ -1,38 +1,35 @@
-let SectOneIsOpen = false;
-let SectTwoIsOpen = false;
-let SectThreeIsOpen = false;
-let SectFourIsOpen = false;
-let SectFiveIsOpen = false;
 
-let showSectOneProd = () => {
-	let foodSectOneProd = document.getElementById("foodSectOneProd");
-	foodSectOneProd.style.display = !SectOneIsOpen ? "flex": "none";
-	SectOneIsOpen = !SectOneIsOpen;	
+
+// #FFEFD5 代表被選取
+let showSingle = () => {
+	document.getElementById("singleLine").style.display = "flex"; // 出現
+	document.getElementById("doubleLine").style.display = "none";
+	document.getElementById("cartLine").style.display = "none";
+	document.getElementById("singleOrder").style.backgroundColor = "#FFEFD5"; //被選取
+	document.getElementById("doubleOrder").style.backgroundColor = "#CD853F";
+	document.getElementById("shoppingCart").style.backgroundColor = "#CD853F";
 }
 
-let showSectTwoProd = () => {
-	let foodSectTwoProd = document.getElementById("foodSectTwoProd");
-	foodSectTwoProd.style.display = !SectTwoIsOpen ? "flex": "none";
-	SectTwoIsOpen = !SectTwoIsOpen;	
+let showDouble = () => {
+	document.getElementById("singleLine").style.display = "none";
+	document.getElementById("doubleLine").style.display = "flex"; // 出現
+	document.getElementById("cartLine").style.display = "none";
+	document.getElementById("singleOrder").style.backgroundColor = "#CD853F";
+	document.getElementById("doubleOrder").style.backgroundColor = "#FFEFD5"; //被選取
+	document.getElementById("shoppingCart").style.backgroundColor = "#CD853F";
 }
 
-let showSectThreeProd = () => {
-	let foodSectThreeProd = document.getElementById("foodSectThreeProd");
-	foodSectThreeProd.style.display = !SectThreeIsOpen ? "flex": "none";
-	SectThreeIsOpen = !SectThreeIsOpen;	
+let showCart = () => {
+	document.getElementById("singleLine").style.display = "none";
+	document.getElementById("doubleLine").style.display = "none";
+	document.getElementById("cartLine").style.display = "flex"; // 出現
+	document.getElementById("singleOrder").style.backgroundColor = "#CD853F";
+	document.getElementById("doubleOrder").style.backgroundColor = "#CD853F";
+	document.getElementById("shoppingCart").style.backgroundColor = "#FFEFD5"; //被選取
 }
 
-let showSectFourProd = () => {
-	let foodSectFourProd = document.getElementById("foodSectFourProd");
-	foodSectFourProd.style.display = !SectFourIsOpen ? "flex": "none";
-	SectFourIsOpen = !SectFourIsOpen;	
-}
 
-let showSectFiveProd = () => {
-	let foodSectFiveProd = document.getElementById("foodSectFiveProd");
-	let soup = document.getElementById("soup");
-	foodSectFiveProd.style.display = !SectFiveIsOpen ? "flex": "none";
-	soup.style.borderBottomLeftRadius = !SectFiveIsOpen ? "0px": "24px";
-	soup.style.borderBottomRightRadius = !SectFiveIsOpen ? "0px": "24px";
-	SectFiveIsOpen = !SectFiveIsOpen;	
-}
+
+
+
+
