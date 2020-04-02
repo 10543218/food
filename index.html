@@ -5,131 +5,92 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
 		<title>首頁</title>
 		
-		<link rel="stylesheet" type="text/css" href="order.css"/>
-		<script type="text/javascript" src="order.js"></script>
+		<link rel="stylesheet" type="text/css" href="food.css"/>
+		<script type="text/javascript" src="food.js"></script>
 	</head>
 	<body>
 		<!-- 單點或合菜那一排 -->
-		<div class="OrderTypeLine">
-			<div class="orderType" id="singleOrder" >單點</div>
-			<div class="orderType" id="doubleOrder" >合菜</div>
+		<div class="orderTypeLine">
+			<div class="orderType" id="singleOrder" onclick="showSingle()">單點</div>
+			<div class="orderType" id="doubleOrder" onclick="showDouble()">合菜</div>
+			<div class="orderType" id="shoppingCart"  onclick="showCart()">購物車</div>
 		</div>
 		
-		<div class="OrderTitleBg">
-			<div class="orderTitleStyle bg-1">主廚推薦</div>
-			<div class="orderTitleStyle">海鮮料理</div>
-			<div class="orderTitleStyle">蔬菜料理</div>
-			<div class="orderTitleStyle">炸物料理</div>
-			<div class="orderTitleStyle">湯品飲品</div>
+		<!-- 單點那一排 -->
+		<div class="orderTitleBg" id="singleLine">
+			<div class="orderTitleStyle">快炒</div>
+			<div class="orderTitleStyle">海鮮</div>
+			<div class="orderTitleStyle">炸物</div>
+			<div class="orderTitleStyle">湯品</div>
+			<div class="orderTitleStyle">飲品</div>
 		</div>
 		
+		<!-- 合菜那一排 -->
+		<div class="orderTitleBg" id="doubleLine">
+			<div class="orderTitleStyle">2000</div>
+			<div class="orderTitleStyle">2500</div>
+			<div class="orderTitleStyle">3000</div>
+			<div class="orderTitleStyle">4000</div>
+			<div class="orderTitleStyle">4500</div>
+		</div>
+		
+		<!-- 購物車那一排 -->
+		<div class="orderTitleBg" id="cartLine">
+			<div class="orderTitleStyle">20</div>
+			<div class="orderTitleStyle">25</div>
+			<div class="orderTitleStyle">30</div>
+			<div class="orderTitleStyle">40</div>
+			<div class="orderTitleStyle">45</div>
+		</div>
+		
+		
+		<!-- 快炒內容 -->
 		<div class="prodSection">
 			<div class="prod">
-				<div class="prodName">月亮蝦餅 (蝦子+麵粉)</div><p>
+				<div class="prodName">月亮蝦餅</div><p>
 				<div class="prodMaterial"></div><p>
 				<img class="img" src="moonShrimp.jpg">
-				<div class="prodPrice"><u>NT $150</u></div><p>
+				<div class="prodPrice">NT $150</div><p>
 				<div class="prodBuyBtn">
-					<input type="checkbox" class="BuyInput">
+					<input type="checkbox" class="buyInput">
 					<div class="plusToCar"> &nbsp加入我的菜單</div>
 				</div><p>
 			</div>
 			
 			<div class="prod">
-				<div class="prodName">月亮蝦餅 (蝦子+麵粉)</div><p>
+				<div class="prodName">月亮蝦餅</div><p>
 				<div class="prodMaterial"></div><p>
 				<img class="img" src="moonShrimp.jpg">
-				<div class="prodPrice"><u>NT $150</u></div><p>
+				<div class="prodPrice">NT $150</div><p>
 				<div class="prodBuyBtn">
-					<input type="checkbox" class="BuyInput">
+					<input type="checkbox" class="buyInput">
 					<div class="plusToCar"> &nbsp加入我的菜單</div>
 				</div><p>
 			</div>
 			
 			<div class="prod">
-				<div class="prodName">月亮蝦餅 (蝦子+麵粉)</div><p>
+				<div class="prodName">月亮蝦餅</div><p>
 				<div class="prodMaterial"></div><p>
 				<img class="img" src="moonShrimp.jpg">
-				<div class="prodPrice"><u>NT $150</u></div><p>
+				<div class="prodPrice">NT $150</div><p>
 				<div class="prodBuyBtn">
-					<input type="checkbox" class="BuyInput">
+					<input type="checkbox" class="buyInput">
 					<div class="plusToCar"> &nbsp加入我的菜單</div>
 				</div><p>
 			</div>
 			
 			<div class="prod">
-				<div class="prodName">月亮蝦餅 (蝦子+麵粉)</div><p>
+				<div class="prodName">月亮蝦餅</div><p>
 				<div class="prodMaterial"></div><p>
 				<img class="img" src="moonShrimp.jpg">
-				<div class="prodPrice"><u>NT $150</u></div><p>
+				<div class="prodPrice">NT $150</div><p>
 				<div class="prodBuyBtn">
-					<input type="checkbox" class="BuyInput">
+					<input type="checkbox" class="buyInput">
 					<div class="plusToCar"> &nbsp加入我的菜單</div>
 				</div><p>
 			</div>
-			<!-- <div class="prod">月亮蝦餅 (蝦子+麵粉)</div> -->
-			<!-- <div class="prod">月亮蝦餅 (蝦子+麵粉)</div> -->
-			<!-- <div class="prod">月亮蝦餅 (蝦子+麵粉)</div> -->
+			
 		</div>
-		
-		
-		
-		<!-- <div class="food"> -->
-			<!-- <div class="foodSect borderBottom0px radiusTop"> -->
-				<!-- <div class="foodTitleBg" onclick="showSectOneProd()">主廚推薦</div> -->
-			<!-- </div> -->
-			<!-- <div class="foodSectProd" id="foodSectOneProd"> -->
-				<!-- <div class="product"> -->
-					<!-- <div class="foodName">月亮蝦餅 (蝦子+麵粉)</div> -->
-					<!-- <font class="price">NT $150</font> -->
-				<!-- </div> -->
-			<!-- </div> -->
-			
-			
-			<!-- <div class="foodSect borderBottom0px"> -->
-				<!-- <div class="foodTitleBg" onclick="showSectTwoProd()">海鮮料理</div> -->
-			<!-- </div> -->
-			<!-- <div class="foodSectProd" id="foodSectTwoProd"> -->
-				<!-- <div class="product"> -->
-					<!-- <div class="foodName">月亮蝦餅 (蝦子+麵粉)</div> -->
-					<!-- <font class="price">NT $150</font> -->
-				<!-- </div> -->
-			<!-- </div> -->
-			
-			
-			<!-- <div class="foodSect borderBottom0px"> -->
-				<!-- <div class="foodTitleBg" onclick="showSectThreeProd()">蔬菜料理</div> -->
-			<!-- </div> -->
-			<!-- <div class="foodSectProd" id="foodSectThreeProd"> -->
-				<!-- <div class="product"> -->
-					<!-- <div class="foodName">月亮蝦餅 (蝦子+麵粉)</div> -->
-					<!-- <font class="price">NT $150</font> -->
-				<!-- </div> -->
-			<!-- </div> -->
-			
-			
-			<!-- <div class="foodSect borderBottom0px"> -->
-				<!-- <div class="foodTitleBg" onclick="showSectFourProd()">炸物料理</div> -->
-			<!-- </div> -->
-			<!-- <div class="foodSectProd" id="foodSectFourProd"> -->
-				<!-- <div class="product"> -->
-					<!-- <div class="foodName">月亮蝦餅 (蝦子+麵粉)</div> -->
-					<!-- <font class="price">NT $150</font> -->
-				<!-- </div> -->
-			<!-- </div> -->
-			
-			
-			<!-- <div class="foodSect radiusBottom" id="soup"> -->
-				<!-- <div class="foodTitleBg" onclick="showSectFiveProd()">湯品飲品</div> -->
-			<!-- </div> -->
-			<!-- <div class="foodSectProd" id="foodSectFiveProd"> -->
-				<!-- <div class="product lastProduct">	 -->
-					<!-- <div class="foodName">椒鹽排骨</div> -->
-					<!-- <font class="price">NT $200</font> -->
-				<!-- </div> -->
-			<!-- </div> -->
-		<!-- </div> -->
-		
 		
 	</body>
 </html>
